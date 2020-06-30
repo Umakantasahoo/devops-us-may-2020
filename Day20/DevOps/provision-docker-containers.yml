@@ -32,6 +32,7 @@
           docker_host: tcp://localhost:4243
           image: "tektutor/ansible-ubuntu"
           name: "ubuntu{{item}}"
+          hostname: "ubuntu{{item}}"
           state: started
           ports:
             - "2{{item}}:22"
@@ -55,6 +56,7 @@
           docker_host: tcp://localhost:4243
           image: "tektutor/ansible-centos"
           name: "centos{{item}}"
+          hostname: "centos{{item}}"
           state: started
           ports:
             - "3{{item}}:22"
