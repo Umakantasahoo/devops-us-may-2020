@@ -1,5 +1,5 @@
 - name: This playbook will install, configure and deploy web page into nginx web server
-  hosts: localhost 
+  hosts: all 
   gather_facts: yes 
   vars:
     - provisioner_tool: Docker
